@@ -65,6 +65,11 @@ async function getImages(directory) {
     const imageExtensions = ['.jpg', '.jpeg', '.JPG', '.JPEG'];
     
     const imageFiles = files.filter(file => {
+      // Ignore hidden files (starting with dot)
+      if (file.startsWith('.')) {
+        return false;
+      }
+      
       const ext = path.extname(file);
       return imageExtensions.includes(ext);
     });
