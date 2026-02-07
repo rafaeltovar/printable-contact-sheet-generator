@@ -1,0 +1,24 @@
+{
+  "name": "printable-contact-sheet",
+  "version": "1.0.0",
+  "description": "Printable contact sheet generator for scanned photographic film images",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "contact-sheet": "node src/index.js",
+    "generate-test": "node generate-test-images.js"
+  },
+  "keywords": [
+    "contact-sheet",
+    "photography",
+    "film",
+    "scan",
+    "image-processing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "^0.33.2"
+  }
+}
